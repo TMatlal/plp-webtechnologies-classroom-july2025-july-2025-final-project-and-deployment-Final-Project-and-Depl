@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #eafaf1;
+  color: #2e5d34;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2e5d34;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 2em;
+}
+
+.hero img {
+  width: 1000px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.slide {
+  min-width: 600px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  position: relative;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: auto;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #2e5d34;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2e5d34;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .slider {
+    height: 200px;
+  }
+}
+
+.about-intro{
+  padding-left: 1.5em;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-top: calc(5% + 50px);
+  min-height: 50px;
+  width: 100%;
+  
+}
